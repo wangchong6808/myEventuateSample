@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '1.5.9.RELEASE'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile "io.eventuate.client.java:eventuate-client-java-spring:$eventuateClientVersion"
+    compile "io.eventuate.local.java:eventuate-local-java-jdbc:${eventuateLocalVersion}"
+    compile "io.eventuate.local.java:eventuate-local-java-embedded-cdc-autoconfigure:${eventuateLocalVersion}"
+    testCompile "io.eventuate.client.java:eventuate-client-java-jdbc:$eventuateClientVersion"
+}
+
+

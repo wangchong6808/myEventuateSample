@@ -1,0 +1,15 @@
+*.ipr
+*.iws
+.gradle
+build
+.idea
+classes
+local/mysql/data
+*.iml
+.DS_Store
+log/
+out
+.local
+src/main/resources/application-for*.yml
+src/main/resources/bootstrap-for*.yml
+gradle
